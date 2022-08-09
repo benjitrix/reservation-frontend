@@ -111,7 +111,7 @@
   }
 
   .links {
-    width: 32%;
+    min-width: 20%;
     display: flex;
     justify-content: space-between;
     overflow: visible;
