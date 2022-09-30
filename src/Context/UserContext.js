@@ -12,6 +12,10 @@ export const UserProvider = ({children}) => {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
+    setIsLoading(false)
+  }, [])
+  
+  useEffect(() => {
     const checkToken = localStorage.getItem('seat-reservation-token')
     if (checkToken === null) {
       setIsLoading(false)
